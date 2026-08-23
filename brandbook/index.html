@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TKACHEV STUDIO — Brandbook & Identity</title>
+  <link rel="icon" type="image/svg+xml" href="../logo/favicons/favicon.svg">
+  <style>
+    :root {
+      --bg-dark: #0D0D0D;
+      --bg-card: #161616;
+      --bg-light: #F4F4F4;
+      --text-main: #E5E5E5;
+      --text-muted: #888888;
+      --border-color: #262626;
+      --font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: var(--font-family);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 40px;
+      margin-bottom: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .brand-title {
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .brand-subtitle {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    .meta-tag {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: var(--text-muted);
+      border: 1px solid var(--border-color);
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 22px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      border-left: 3px solid var(--text-main);
+      padding-left: 12px;
+    }
+
+    p {
+      color: #CCCCCC;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 30px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .logo-preview-box {
+      background-color: #000;
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 200px;
+      margin-bottom: 20px;
+    }
+
+    .logo-preview-box.light-bg {
+      background-color: #FFFFFF;
+    }
+
+    .logo-preview-box img {
+      max-width: 100%;
+      height: auto;
+      max-height: 120px;
+    }
+
+    /* Color Palette */
+    .color-swatch {
+      height: 100px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .color-info {
+      font-size: 14px;
+    }
+
+    .color-name {
+      font-weight: 700;
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+
+    .color-hex {
+      font-family: monospace;
+      color: var(--text-muted);
+    }
+
+    /* Typography showcase */
+    .typo-sample-large {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+    }
+
+    .typo-sample-medium {
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      color: var(--text-muted);
+    }
+
+    /* Rules Grid */
+    .rule-item {
+      padding: 15px;
+      background: rgba(255,255,255,0.02);
+      border-left: 2px solid var(--border-color);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 30px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div>
+        <div class="brand-title">TKACHEV STUDIO</div>
+        <div class="brand-subtitle">Brand Identity & Visual Guidelines</div>
+      </div>
+      <div class="meta-tag">OFFICIAL BRANDBOOK 2026</div>
+    </header>
+
+    <!-- SECTION 1: PHILOSOPHY -->
+    <section>
+      <h2>01. Манифест и Философия</h2>
+      <div class="card">
+        <p style="font-size: 20px; font-weight: 300; font-style: italic; color: #FFFFFF; margin-bottom: 20px;">
+          «GOOD DESIGN IS NOT THE FINAL RESULT. IT IS THE BEGINNING OF AN EXPERIENCE.»
+        </p>
+        <p>
+          TKACHEV STUDIO соединяет аналитическое видение, графический дизайн и практический 20-летний опыт материального производства. Каждая задача проходит триаду развития: <strong>THINK</strong> (Концептуализация), <strong>CREATE</strong> (Дизайн), <strong>REALIZE</strong> (Физическая реализация).
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: LOGO CONCEPTS -->
+    <section>
+      <h2>02. Концепции Логотипа</h2>
+
+      <!-- CONCEPT 1 -->
+      <h3 style="letter-spacing: 2px; margin-bottom: 20px; color: #888;">КОНЦЕПТ 1: «ПРОЦЕСС ТРИАДЫ» (THINK • CREATE • REALIZE)</h3>
+      <div class="grid-2" style="margin-bottom: 40px;">
+        <div class="card">
+          <div class="card-title">Темная версия (Dark Mode)</div>
+          <div class="logo-preview-box">
+            <img src="../logo/concept-1-triad/logo-horizontal-light.svg" alt="Concept 1 Horizontal Light">
+          </div>
+          <p>Горизонтальная компоновка для тёмных фонов и контрастных интерфейсов.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Светлая версия (Light Mode)</div>
+          <div class="logo-preview-box light-bg">
+            <img src="../logo/concept-1-triad/logo-horizontal-dark.svg" alt="Concept 1 Horizontal Dark">
+          </div>
+          <p>Горизонтальная компоновка для печатной продукции и светлых носителей.</p>
+        </div>
+      </div>
+
+      <!-- CONCEPT 2 -->
+      <h3 style="letter-spacing: 2px; margin-bottom: 20px; color: #888;">КОНЦЕПТ 2: «КОНСТРУКЦИЯ И ФОРМА» (PACKAGING & SPACE)</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Изометрический Знак (Dark)</div>
+          <div class="logo-preview-box">
+            <img src="../logo/concept-2-construction/logo-horizontal-light.svg" alt="Concept 2 Horizontal Light">
+          </div>
+          <p>Отражает архитектуру формы, объем упаковки и инженерный препресс-подход.</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Изометрический Знак (Light)</div>
+          <div class="logo-preview-box light-bg">
+            <img src="../logo/concept-2-construction/logo-horizontal-dark.svg" alt="Concept 2 Horizontal Dark">
+          </div>
+          <p>Трехмерная структура линий развертки для фирменной полиграфии.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PALETTE -->
+    <section>
+      <h2>03. Фирменная Палитра</h2>
+      <div class="grid-4">
+        <div class="card">
+          <div class="color-swatch" style="background-color: #0D0D0D;"></div>
+          <div class="color-info">
+            <div class="color-name">Monolith Black</div>
+            <div class="color-hex">HEX: #0D0D0D</div>
+            <div class="color-hex">CMYK: 75, 68, 67, 90</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-swatch" style="background-color: #FFFFFF;"></div>
+          <div class="color-info">
+            <div class="color-name" style="color:#FFF;">Pure White</div>
+            <div class="color-hex">HEX: #FFFFFF</div>
+            <div class="color-hex">CMYK: 0, 0, 0, 0</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-swatch" style="background-color: #1A1A1A;"></div>
+          <div class="color-info">
+            <div class="color-name">Concrete Gray</div>
+            <div class="color-hex">HEX: #1A1A1A</div>
+            <div class="color-hex">CMYK: 72, 65, 64, 82</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="color-swatch" style="background-color: #666666;"></div>
+          <div class="color-info">
+            <div class="color-name">Graphite Gray</div>
+            <div class="color-hex">HEX: #666666</div>
+            <div class="color-hex">CMYK: 0, 0, 0, 70</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: TYPOGRAPHY -->
+    <section>
+      <h2>04. Типографика</h2>
+      <div class="card">
+        <div class="typo-sample-large">TKACHEV STUDIO</div>
+        <div class="typo-sample-medium">HELVETICA NEUE / ARIAL / SANS-SERIF</div>
+        <p style="margin-top: 20px;">
+          Основной шрифт гарнитуры — строгий гротеск. Заголовки набираются прописными буквами с разряженным трекингом (+6px), что создает ощутимую монументальность и архитектурную строгость.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 5: RULES -->
+    <section>
+      <h2>05. Правила использования</h2>
+      <div class="card">
+        <div class="rule-item">
+          <strong>Охранное поле:</strong> Минимальный отступ со всех сторон равен высоте буквы «T».
+        </div>
+        <div class="rule-item">
+          <strong>Запрет искажений:</strong> Не допускается изменение пропорций, наклон или деформация элементов знака.
+        </div>
+        <div class="rule-item">
+          <strong>Чистота стиля:</strong> Не использовать эффекты теней, объемов или градиентов поверх логотипа.
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 TKACHEV STUDIO. Все права защищены. Разработано в соответствии с высокими стандартами дизайна и производства.
+    </footer>
+  </div>
+
+</body>
+</html>
