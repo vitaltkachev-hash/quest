@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .dagaz-outer { stroke: #111827; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .dagaz-core { stroke: #C86D3B; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .dagaz-fill { fill: #C86D3B; fill-opacity: 0.08; }
+      .brand-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #111827; letter-spacing: 0.35em; text-anchor: middle; }
+      .brand-subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #6B7280; letter-spacing: 0.45em; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="500" height="500" rx="32" />
+
+  <!-- Dagaz Rune / Transformation Monogram -->
+  <g transform="translate(0, -10)">
+    <polygon class="dagaz-fill" points="150,140 250,220 150,300" />
+    <polygon class="dagaz-fill" points="350,140 250,220 350,300" />
+
+    <line class="dagaz-outer" x1="150" y1="140" x2="150" y2="300" />
+    <line class="dagaz-outer" x1="350" y1="140" x2="350" y2="300" />
+
+    <line class="dagaz-core" x1="150" y1="140" x2="350" y2="300" />
+    <line class="dagaz-core" x1="150" y1="300" x2="350" y2="140" />
+
+    <circle cx="250" cy="220" r="4" fill="#C86D3B" />
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="405" class="brand-title">TKACHEV</text>
+  <text x="250" y="430" class="brand-subtitle">STUDIO</text>
+</svg>
