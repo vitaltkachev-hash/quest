@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0D0D0D; }
+      .struct-main { stroke: #FFFFFF; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .struct-inner { stroke: #888888; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 6; fill: none; }
+      .struct-face { fill: #FFFFFF; fill-opacity: 0.05; }
+      .brand-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.35em; text-anchor: middle; }
+      .brand-subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #A0A0A0; letter-spacing: 0.45em; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="500" height="500" rx="32" />
+
+  <!-- Monogram & 3D Structure: Isometric Cube / Architectural Unfold forming T -->
+  <!-- Vertices:
+       Center top: (250, 110)
+       Top Right: (350, 165)
+       Bottom Right: (350, 275)
+       Center Bottom: (250, 330)
+       Bottom Left: (150, 275)
+       Top Left: (150, 165)
+       Center Origin: (250, 220)
+  -->
+  <g transform="translate(0, -10)">
+    <!-- Polygons for subtle depth -->
+    <polygon class="struct-face" points="250,110 350,165 250,220 150,165" />
+    <polygon class="struct-face" points="150,165 250,220 250,330 150,275" />
+    <polygon class="struct-face" points="250,220 350,165 350,275 250,330" />
+
+    <!-- Outer Contour of 3D Hexagonal / Isometric Cube structure -->
+    <polygon class="struct-main" points="250,110 350,165 350,275 250,330 150,275 150,165" />
+
+    <!-- Internal Y-Axis Lines forming 3D Cube and T Monogram -->
+    <line class="struct-main" x1="250" y1="220" x2="250" y2="330" />
+    <line class="struct-main" x1="250" y1="220" x2="150" y2="165" />
+    <line class="struct-main" x1="250" y1="220" x2="350" y2="165" />
+
+    <!-- Spatial / Architectural Unfold Accent Lines -->
+    <line class="struct-inner" x1="150" y1="165" x2="250" y2="110" />
+    <line class="struct-inner" x1="350" y1="165" x2="250" y2="110" />
+    <line class="struct-inner" x1="150" y1="275" x2="250" y2="220" />
+    <line class="struct-inner" x1="350" y1="275" x2="250" y2="220" />
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="405" class="brand-title">TKACHEV</text>
+  <text x="250" y="430" class="brand-subtitle">STUDIO</text>
+</svg>

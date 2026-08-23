@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .struct-main { stroke: #111111; stroke-width: 6; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .struct-inner { stroke: #888888; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 6 6; fill: none; }
+      .struct-face { fill: #000000; fill-opacity: 0.03; }
+      .brand-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #111111; letter-spacing: 0.35em; text-anchor: middle; }
+      .brand-subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #666666; letter-spacing: 0.45em; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="500" height="500" rx="32" />
+
+  <!-- Monogram & 3D Structure: Isometric Cube / Architectural Unfold -->
+  <g transform="translate(0, -10)">
+    <!-- Polygons for subtle depth -->
+    <polygon class="struct-face" points="250,110 350,165 250,220 150,165" />
+    <polygon class="struct-face" points="150,165 250,220 250,330 150,275" />
+    <polygon class="struct-face" points="250,220 350,165 350,275 250,330" />
+
+    <!-- Outer Contour -->
+    <polygon class="struct-main" points="250,110 350,165 350,275 250,330 150,275 150,165" />
+
+    <!-- Internal Lines -->
+    <line class="struct-main" x1="250" y1="220" x2="250" y2="330" />
+    <line class="struct-main" x1="250" y1="220" x2="150" y2="165" />
+    <line class="struct-main" x1="250" y1="220" x2="350" y2="165" />
+
+    <!-- Spatial Accent Lines -->
+    <line class="struct-inner" x1="150" y1="165" x2="250" y2="110" />
+    <line class="struct-inner" x1="350" y1="165" x2="250" y2="110" />
+    <line class="struct-inner" x1="150" y1="275" x2="250" y2="220" />
+    <line class="struct-inner" x1="350" y1="275" x2="250" y2="220" />
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="405" class="brand-title">TKACHEV</text>
+  <text x="250" y="430" class="brand-subtitle">STUDIO</text>
+</svg>

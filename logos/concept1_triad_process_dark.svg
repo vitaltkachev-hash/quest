@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0D0D0D; }
+      .line { stroke: #FFFFFF; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .line-accent { stroke: #E6E6E6; stroke-width: 14; stroke-linecap: round; stroke-linejoin: round; fill: none; }
+      .brand-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 24px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.35em; text-anchor: middle; }
+      .brand-subtitle { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 400; fill: #A0A0A0; letter-spacing: 0.45em; text-anchor: middle; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="500" height="500" rx="32" />
+
+  <!-- Monogram T: Triad Process (3 intersecting precision lines forming T) -->
+  <g transform="translate(0, -10)">
+    <!-- Line 1: Horizontal top bar representing THINK (Left to Center-Right) -->
+    <path class="line" d="M 140 160 L 360 160" />
+
+    <!-- Line 2: Vertical stem representing CREATE (Top-Center downwards) -->
+    <path class="line-accent" d="M 250 160 L 250 330" />
+
+    <!-- Line 3: Dynamic intersecting diagonal/structure line representing REALIZE -->
+    <path class="line" d="M 180 330 L 320 190" />
+  </g>
+
+  <!-- Typography -->
+  <text x="250" y="405" class="brand-title">TKACHEV</text>
+  <text x="250" y="430" class="brand-subtitle">STUDIO</text>
+</svg>
