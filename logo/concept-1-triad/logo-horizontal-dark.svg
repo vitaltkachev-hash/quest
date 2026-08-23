@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
+  <g transform="translate(10, 10) scale(0.5)">
+    <g fill="none" stroke="#0D0D0D" stroke-linecap="butt" stroke-linejoin="miter">
+      <line x1="30" y1="45" x2="170" y2="45" stroke-width="14" />
+      <line x1="100" y1="45" x2="100" y2="165" stroke-width="14" />
+      <line x1="55" y1="140" x2="145" y2="50" stroke-width="6" />
+    </g>
+    <circle cx="100" cy="45" r="4" fill="#FFFFFF" />
+    <circle cx="100" cy="92.5" r="4" fill="#FFFFFF" />
+  </g>
+  <text x="130" y="58" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6" fill="#0D0D0D">TKACHEV</text>
+  <text x="131" y="88" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="11" fill="#666666">STUDIO</text>
+</svg>
