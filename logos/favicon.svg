@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 80" width="100%" height="100%">
+  <defs>
+    <style>
+      .brand-single-line { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 32px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.25em; text-anchor: middle; }
+      .accent { fill: #D47A47; }
+    </style>
+  </defs>
+
+  <!-- Transparent Background for Favicon & Site Header -->
+
+  <!-- Single-line text "TKACHEV STUDIO" -->
+  <text x="300" y="52" class="brand-single-line">TKACHEV <tspan class="accent">STUDIO</tspan></text>
+</svg>
